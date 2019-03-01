@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
-"       Modified version of a .virmrc by Amir Salihefendic â @amix3k
+"       Modified version of a .virmrc by Amir Salihefendic @amix3k
 
 " Sections:
 "    -> VUNDLE
