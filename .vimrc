@@ -1,6 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
-"       Modified version of a .virmrc by Amir Salihefendic @amix3k
+"             .vimrc file
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Sections:
 "    -> VUNDLE
@@ -111,7 +112,7 @@ set wildmenu
 set ruler
 
 " Height of the command bar
-set cmdheight=2
+set cmdheight=1
 
 " A buffer becomes hidden when it is abandoned
 set hid
