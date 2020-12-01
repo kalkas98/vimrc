@@ -35,11 +35,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
-
+Plugin 'kyoz/purify', {'rtp': 'vim/'}
+Plugin 'mattn/emmet-vim'
+"Plugin 'lervag/vimtex'
+Plugin 'xuhdev/vim-latex-live-preview'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -156,10 +159,10 @@ syntax on
 
 set termguicolors
 
-try
-    colorscheme gruvbox
-catch
-endtry
+colorscheme purify
+
+
+
 
 set background=dark
 
@@ -328,6 +331,9 @@ map <leader>s? z=
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Python"
+nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
